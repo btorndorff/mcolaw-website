@@ -185,6 +185,15 @@ p {
     margin-top: 20px;
 }
 
+#section-a .btn:hover {
+    background: #eaeaea;
+    color: #333;
+}
+
+#section-a p {
+    text-align: left;
+}
+
 
 /* Section-b  & d */
 
@@ -236,6 +245,51 @@ p {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+
+/* contact form */
+
+#contact-section {
+    background: #333;
+    color:black;
+    padding: 2em;
+}
+
+#contact-section .content-wrap{
+    border: white solid 2px;
+    padding: 1em;
+    background: darkgray;
+}
+
+#contact {
+    padding-bottom: 1em;
+}
+
+#contact label {
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#contact input {
+    width: 100%;
+}
+
+#contact textarea {
+    height: 100px;
+    width: 100%;
+}
+
+#contact-box ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.error {
+    background: red;
+    color: white;
 }
 
 /* Footer */
@@ -302,6 +356,12 @@ p {
         grid-column: span 2;
     }
 
+     .box li {
+        white-space: pre-line;
+     }
+
+    
+
     #section-b .grid,
     #section-d .grid{
         width: 100%;
@@ -342,5 +402,19 @@ p {
         padding: 0;
         margin: 0;
         border: solid #333 5px;
+    }
+
+    #contact-section {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #contact {
+        width: 40%;
+    }
+
+    #contact-box {
+        width: 40%;
+        height: 80%;
     }
 }
